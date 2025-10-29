@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class CardComponent {
 
+    // @ts-ignore
+    planos
+
+  getFullPriceMessage() {
+
+    console.log("changeDetection")
+    
+  }
+
+  teste() {
+    
+  }
 }
