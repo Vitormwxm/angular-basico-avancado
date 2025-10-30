@@ -5,16 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CardsModule } from './cards/cards.module';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { CardBlackComponent } from './components/long-card/card-black/card-black.component';
+import { LongCardModule } from './long-card/long-card.module';
 
 
 @NgModule({
   declarations: [
-    AppComponent, 
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CardsModule
+    CardsModule,
+    LongCardModule
   ],
   providers: [
     provideClientHydration(),
