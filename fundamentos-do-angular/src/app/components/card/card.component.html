@@ -1,5 +1,12 @@
 <div class="card">
     <div class="card__plan card__item">Plano <b>{{ planos.info.tipo}}</b></div>
-    <div class="card__price card__item">{{ planos.info.preco}}</div>
+    <div class="card__price card__item">{{ getFullPriceMessage()}}</div>
+    <button (click)="teste">teste</button>
     <app-card-button></app-card-button>
+    <app-card-button class="button2"></app-card-button>
+
+    
+    <mat-slider min="1" max="5" step="0.5">
+        <input matSliderThumb value="1.5">
+    </mat-slider>
 </div>
