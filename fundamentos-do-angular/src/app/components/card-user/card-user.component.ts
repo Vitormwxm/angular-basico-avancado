@@ -8,8 +8,17 @@ import { Component } from '@angular/core';
 export class CardUserComponent {
   perfilUser = "./assets/logo.png";
   userName: string = "padrao";
+  inputValue = "teste";
+  attrBiding = "teste"
 
   alterUserName() {
     this.userName = "Novo"
+    this.attrBiding = "Teste diferenciado"
   }
+
+  handleInputkeyUp(event: KeyboardEvent) {
+    const currentTarget = (event.target as HTMLInputElement)
+    console.log(currentTarget.value)
+  }
+  
 }
