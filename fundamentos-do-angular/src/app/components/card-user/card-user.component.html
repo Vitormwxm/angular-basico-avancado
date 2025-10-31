@@ -13,7 +13,10 @@
    
 </div>
 <div>
-    <button [attr.title]="attrBiding" (click)="alterUserName()">Altera usuario</button>
+    <button  [attr.title]="attrBiding" (click)="alterUserName()">Altera usuario</button>
 
-    <input id="meu-input" (keyup)="handleInputkeyUp($event)">
+    <div  >
+        <input id="meu-input" [style.background-color]="color" (keyup)="handleInputkeyUp($event)">
+    </div>
+    
 </div>
