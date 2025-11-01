@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'fundamentos-do-angular';
+  colorUserName: string = '';
+
+  alterColorUserName() {
+    this.colorUserName = 'blue';
+    console.log('alterou' + this.colorUserName)
+  }
 }
