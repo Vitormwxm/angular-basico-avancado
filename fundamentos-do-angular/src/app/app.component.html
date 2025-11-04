@@ -1,6 +1,6 @@
 <div class="containerApplication">
-    <app-customize></app-customize>
-    <app-card-avatar ></app-card-avatar>
+    <app-customize (background)="passei($event)"></app-customize>
+    <app-card-avatar [backgroundCard]="parentBackground" ></app-card-avatar>
 </div>
 
 

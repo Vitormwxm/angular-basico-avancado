@@ -8,4 +8,5 @@ import { Component, Input } from '@angular/core';
 export class CardAvatarComponent {
 
   @Input('colorUserName') colorUserName: String = '';
+  @Input() backgroundCard : string = '';
 }
